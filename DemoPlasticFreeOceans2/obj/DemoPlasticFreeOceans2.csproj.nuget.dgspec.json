@@ -1,0 +1,79 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\t-emclau\\source\\repos\\DemoPlasticFreeOceans2\\DemoPlasticFreeOceans2\\DemoPlasticFreeOceans2.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\t-emclau\\source\\repos\\DemoPlasticFreeOceans2\\DemoPlasticFreeOceans2\\DemoPlasticFreeOceans2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\t-emclau\\source\\repos\\DemoPlasticFreeOceans2\\DemoPlasticFreeOceans2\\DemoPlasticFreeOceans2.csproj",
+        "projectName": "DemoPlasticFreeOceans2",
+        "projectPath": "C:\\Users\\t-emclau\\source\\repos\\DemoPlasticFreeOceans2\\DemoPlasticFreeOceans2\\DemoPlasticFreeOceans2.csproj",
+        "packagesPath": "C:\\Users\\t-emclau\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\t-emclau\\source\\repos\\DemoPlasticFreeOceans2\\DemoPlasticFreeOceans2\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\t-emclau\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "NumSharp": {
+              "target": "Package",
+              "version": "[0.10.6, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[4.6.0-preview7.19362.9, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
