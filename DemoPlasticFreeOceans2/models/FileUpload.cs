@@ -11,11 +11,11 @@ namespace DemoPlasticFreeOceans2.Models
         public string Title { get; set; }
 
         [Required]
-        [Display(Name = "Public Schedule")]
+        [Display(Name = "Picture")]
         public IFormFile UploadPublicSchedule { get; set; }
 
         [Required]
-        [Display(Name = "Private Schedule")]
-        public IFormFile UploadPrivateSchedule { get; set; }
+        [Display(Name = "update")]
+        public IFormFile UploadPicture { get; set; }
     }
 }

@@ -2,13 +2,13 @@
 @model DemoPlasticFreeOceans2.Pages.Schedules.IndexModel
 
 @{
-    ViewData["Title"] = "Schedules";
+    ViewData["Title"] = "Pictures";
 }
 
-<h2>Schedules</h2>
+<h2>Pictures</h2>
 <hr />
 
-<h3>Upload Schedules</h3>
+<h3>Upload Pictures</h3>
 <div class="row">
     <div class="col-md-4">
         <form method="post" enctype="multipart/form-data">
@@ -22,8 +22,13 @@
                 <input asp-for="FileUpload.UploadPublicSchedule" type="file" class="form-control" style="height:auto" />
                 <span asp-validation-for="FileUpload.UploadPublicSchedule" class="text-danger"></span>
             </div>
-            <input type="submit" value="Upload" class="btn btn-default" />
+            <input type="submit" value="Upload" class="btn btn-primary" />
         </form>
+    </div>
+    <div class="col-md-8 text-center">
+        <h1>Plastics</h1>
+        <label asp-for="FileUpload.UploadPicture" class="control-label"></label>
+
     </div>
 </div>
 

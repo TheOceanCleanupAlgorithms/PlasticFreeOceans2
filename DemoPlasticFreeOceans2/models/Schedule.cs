@@ -18,9 +18,9 @@ namespace DemoPlasticFreeOceans2.Models
 
         public string PrivateSchedule { get; set; }
 
-        [Display(Name = "Private Schedule Size (bytes)")]
+        [Display(Name = "Results Size(bytes)")]
         [DisplayFormat(DataFormatString = "{0:N1}")]
-        public long PrivateScheduleSize { get; set; }
+        public long ResultsSize { get; set; }
 
         [Display(Name = "Uploaded (UTC)")]
         [DisplayFormat(DataFormatString = "{0:F}")]

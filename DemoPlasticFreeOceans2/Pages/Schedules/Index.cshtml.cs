@@ -21,18 +21,9 @@ namespace DemoPlasticFreeOceans2.Pages.Schedules
 
         public async Task<IActionResult> OnPostAsync()
         {
-            // Perform an initial check to catch FileUpload class
-            // attribute violations.
-            //if (!ModelState.IsValid)
-            //{
-            //    return Page();
-            //}
 
             var publicScheduleData =
                 await FileHelpers.ProcessFormFile(FileUpload.UploadPublicSchedule, ModelState);
-
-            // Perform a second check to catch ProcessFormFile method
-            // violations.
             if (!ModelState.IsValid)
             {
                 return Page();
@@ -42,7 +33,6 @@ namespace DemoPlasticFreeOceans2.Pages.Schedules
             {
                 PublicSchedule = publicScheduleData,
                 PublicScheduleSize = FileUpload.UploadPublicSchedule.Length,
-                PrivateScheduleSize = FileUpload.UploadPrivateSchedule.Length,
                 Title = FileUpload.Title,
                 UploadDT = DateTime.UtcNow
             };

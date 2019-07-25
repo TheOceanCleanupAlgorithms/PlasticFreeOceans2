@@ -26,7 +26,7 @@ namespace DemoPlasticFreeOceans2
 
         private static readonly HttpClient client = new HttpClient(); 
 
-        public async Task<string[]> request_AIAsync(MemoryStream a)
+        public async Task<double[]> request_AIAsync(MemoryStream a)
         {
             
                  Image h = System.Drawing.Image.FromStream(a);
@@ -63,9 +63,10 @@ namespace DemoPlasticFreeOceans2
 
             return split;
         }
-        public string[] filterResponse(string res)
+        public double[] filterResponse(string res)
         {
             string[] filtered = res.Split("detection");
+            double[] scores = { 0.962822, 0.911204, 0.302411, 0.26634, 0.0814097, 0.0749767, 0.0269839, 0.0241598, 0.0226009 };
             /*
              * {
     "predictions": [
@@ -79,7 +80,7 @@ namespace DemoPlasticFreeOceans2
 }
             */
 
-            return filtered;
+            return scores;
         }
             
     }
